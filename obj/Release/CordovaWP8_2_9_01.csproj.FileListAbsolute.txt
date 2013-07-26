@@ -1,0 +1,16 @@
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\Bin\Release\CordovaWP8_2_9_01.dll
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\Bin\Release\CordovaWP8_2_9_01.pdb
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\Bin\Release\AppManifest.xaml
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\Bin\Release\Properties\WMAppManifest.xml
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\Bin\Release\CordovaAppProj_Release_AnyCPU.xap
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\obj\Release\App.g.cs
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\obj\Release\cordovalib\CordovaView.g.cs
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\obj\Release\MainPage.g.cs
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\obj\Release\Plugins\UI\AudioRecorder.g.cs
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\obj\Release\Plugins\UI\ImageCapture.g.cs
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\obj\Release\Plugins\UI\NotificationBox.g.cs
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\obj\Release\Plugins\UI\VideoRecorder.g.cs
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\obj\Release\CordovaWP8_2_9_01.g.resources
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\obj\Release\CordovaWP8_2_9_01.dll
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\obj\Release\CordovaWP8_2_9_01.pdb
+C:\Users\Jannik\Development\CordovaWP8_2_9_01\CordovaWP8_2_9_01\obj\Release\XapCacheFile.xml

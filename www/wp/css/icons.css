@@ -1,0 +1,40 @@
+﻿.ui-icon-abbruch {
+	background-image: url("../images/appbar/abbruch.png");
+   background-size: 100% 100%;
+}
+.ui-icon-einstellungen {
+	background-image: url("../images/appbar/einstellungen.png");
+   background-size: 100% 100%;
+}
+.ui-icon-selection {
+	background-image: url("../images/appbar/multiChoice.png");
+   background-size: 100% 100%;
+}
+.ui-icon-logout {
+   background-image: url("../images/appbar/logout.png");
+   background-size: 100% 100%;
+}
+.ui-icon-ok {
+	background-image: url("../images/appbar/ok.png");
+   background-size: 100% 100%;
+}
+.ui-icon-papierkorb{
+	background-image: url("../images/appbar/papierkorb.png");
+   background-size: 100% 100%;
+}
+.ui-icon-rename{
+	background-image: url("../images/appbar/Rename.png");
+   background-size: 100% 100%;
+}
+.ui-icon-move{
+	background-image: url("../images/appbar/Move.png");
+   background-size: 100% 100%;
+}
+.ui-icon-share{
+	background-image: url("../images/appbar/Share.png");
+   background-size: 100% 100%;
+}
+.ui-icon-back{
+	background-image: url("../images/appbar/back.png");
+   background-size: 100% 100%;
+}

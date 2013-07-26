@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <title>Campus Cloud</title>
+    <link rel="stylesheet" href="wp/css/wp/jquery.mobile.wp.theme.css" />
+    <link href="wp/css/progress-bar.css" rel="stylesheet" type="text/css" />
+    <link href="wp/css/toggle-button.css" rel="stylesheet" type="text/css" />
+    <link href="wp/css/app-bar.css" rel="stylesheet" type="text/css" />
+    <link href="wp/css/mobiscroll-1.5.3.css" rel="stylesheet" type="text/css" />
+    <link href="wp/css/icons.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="css/mobile.css">
+
+
+    <style type="text/css">
+        /* custom icons for toggle button*/
+        .ui-icon-demo-help, .ui-icon-demo-set {
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 30px 30px;
+        }
+
+        .ui-toggle-button-a .ui-icon-demo-set, .ui-toggle-button-b[checked='checked'] .ui-icon-demo-set { /*background-image: url(Images/set.dark.png) ;*/
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAcFJREFUeNrsmYFtgzAQRQPKAIzgbkA28AiM0E7QjEAnSDYgG6QbwAZNJ2CE0AncO+ncnizbQsaqG+m+dAKMgXv4fD6Syhize2TVuweXAAiAAAiAAAiAAAiAACSoqqqggVqwHkzF+jnXpAnL6RQL3KsFu5tfDexcQ+cG3M/mR04AcsRVB6bAPlgbgnQ5AKrUDxo77OgcbBY4Xuj4DptmxS0OcM2NA6Ron2EeYZhg6FzI8TXOT9z5TdoSQrA9mrgwbEZnXtj2pvgc8DhmdaXQ4hO490DMtK9LAbQeiDEy2qER64tlIcowXIq99RONRsv6zx6AsSSAZo7MgbfN20+O8zP1TfKj3jD5FS1UPGQWth/KRl9s/wLZ6Ans/OdZKBLPigFeKTw69jy+oD0Xy0I0gb0ZKPKyOqfvz4pcKguFNHjyfBdJu22RUgIfbFdUDA2qQvl8eKetds5x3eAeh+TfaHMVcxjPZp1sRWpHQ/+LatSZnDHxdUJvfZF1pnoK4105zS9gb5EQxAp2KlrMuRBskTqy9sEZAZ3Tj83fA76vMqfOR4dfwT6pjJ5CAEl+yD80AiAAAiAAAiAAAiAAAlBM3wIMAG6WJmruRawzAAAAAElFTkSuQmCC);
+        }
+
+        .ui-toggle-button-b .ui-icon-demo-set, .ui-toggle-button-a[checked='checked'] .ui-icon-demo-set { /*background-image: url(Images/set.light.png);*/
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAalJREFUeNrsmYGNgzAMABv0AzACv0F+A0ZghO8E7Qj8BPwGdIOOABv0fwJGgJ8gb0vm5UaBVo37aSVbshQIEF/i2I4wzrnNM0u2eXJRAAVQAAVQAAVQAAVQAGExxljQGrS4OwGW01IKYkFH/Cxpy/py6muxLTamJAAZ6jytQHElTuweglQS45nYAw25yQTfmeh6pNm+JG/wzlesB70IeCG6BPr8gQy/xvhewvjoPQCyD7gMV3SbztsX8/08+R4IGDbrEf3e28B1AGKgdpkKwAYguhtWrE4WhSjCcGMKNusNrYZlzw8BgC4lQMkMGRZmm99vPOMRaH/r+FlM+ARtaZPOMrH2UjT6Ye0DGPEK+vnvUWjFnwvmWkcCrNh7PKG9J4tCtIGDEWjlncp7NjojS5cNfzWQH+fJ+KWwa5OF0QXXcKxwawJ9Z/ngIYo59OcLWdkHG2OTmDTA6UoAnifK2HEzoQNMTlGHyxb0YyX6YQXbP8yBhmVexxMTuQtfgVLy/GGkf3DgcZKXynCNmXoH+k1ldC86nv6hUQAFUAAFUAAFUAAFUIBk8ivAAJTba5LGeGkDAAAAAElFTkSuQmCC);
+        }
+    </style>
+
+        <script type="text/javascript" src="js/plugins/cordova.js"></script>
+
+    <!-- Load dependent plugins -->
+    <script src="wp/js/jquery.js" type="text/javascript"></script>
+    <script src="wp/js/jquery.mobile.js" type="text/javascript"></script>
+    <script src="wp/css/wp/jquery.mobile.wp.theme.init.js" type="text/javascript"></script>
+    <script src="wp/js/jquery.mobile.themeswitcher.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/plugins/BlobBuilder.js"></script>
+    <script type="text/javascript" src="js/plugins/Blob.js"></script>
+    <script src="wp/js/progress-bar.js" type="text/javascript"></script>
+    <script src="wp/js/toggle-button.js" type="text/javascript"></script>
+    <script src="wp/js/app-bar.js" type="text/javascript"></script>
+    <script src="wp/js/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="wp/js/mobiscroll-1.5.3.js" type="text/javascript"></script>
+
+    <script src="wp/js/cordova-2.5.0.js" type="text/javascript"></script>
+    <script src="wp/js/phoneTheme.js" type="text/javascript"></script>
+    <script src="wp/js/jquery.cordova.wp.themeswitcher.js" type="text/javascript"></script>
+    <script src="wp/js/dateTimePicker.js" type="text/javascript"></script>
+    
+    <script src="lib/js/plugins/webdav.js"></script>
+    <script src="lib/js/plugins/base64.js"></script>
+    <script src="lib/js/plugins/jquery.ajaxfileupload.js"></script>
+    <script src="lib/js/plugins/jquery.blockUI.js"></script>
+    <script src="lib/js/plugins/jquery.dateFormat-1.0.js"></script>
+         <!-- Load dependent modules -->
+    <script src="lib/config/config.js"></script>
+    <script src="lib/js/logic/helper.js"></script>
+    <script src="lib/js/logic/translator.js"></script>
+    <script src="lib/js/logic/keyboard.js"></script>
+    <script src="lib/js/lang/de-de.js"></script>
+    <script src="lib/js/lang/en-us.js"></script>
+    <!--Load Interfaces -->
+    <script src="lib/js/interface/interface.js"></script>
+    <script src="lib/js/interface/backendInterface.js"></script>
+    <script src="lib/js/interface/backendDummy.js"></script>
+    <script src="lib/js/interface/backendOwncloud.js"></script>
+    <script src="lib/js/interface/backendSharepoint.js"></script>
+    <script src="lib/js/interface/frontendInterface.js"></script>
+    <script src="lib/js/interface/frontendDummy.js"></script>
+    <script src="lib/js/interface/frontendProduction.js"></script>
+
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <style type="text/css">
+        /* custom icons for toggle button*/
+
+        .ui-icon-demo-help,
+        .ui-icon-demo-set {
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 30px 30px;
+        }
+
+        .ui-toggle-checked .ui-icon-demo-help {
+            background-image: url(wp/images/help.light.png);
+        }
+
+        .ui-toggle-unchecked .ui-icon-demo-help {
+            background-image: url(wp/images/help.dark.png);
+        }
+
+        .ui-toggle-checked .ui-icon-demo-set {
+            background-image: url(wp/images/set.light.png);
+        }
+
+        .ui-toggle-unchecked .ui-icon-demo-set {
+            background-image: url(wp/images/set.dark.png);
+        }
+
+        .ui-icon-demo-help,
+        .ui-icon-demo-set {
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 30px 30px;
+        }
+
+        .ui-btn-up-a .ui-icon-demo-help,
+        .ui-btn-hover-a .ui-icon-demo-help,
+        .ui-btn-down-b .ui-icon-demo-help {
+            background-image: url(wp/images/help.dark.png);
+        }
+
+        .ui-btn-up-b .ui-icon-demo-help,
+        .ui-btn-hover-b .ui-icon-demo-help,
+        .ui-btn-down-a .ui-icon-demo-help {
+            background-image: url(wp/images/help.light.png);
+        }
+
+        .ui-btn-up-a .ui-icon-demo-set,
+        .ui-btn-hover-a .ui-icon-demo-set,
+        .ui-btn-down-b .ui-icon-demo-set {
+            background-image: url(wp/images/set.dark.png);
+        }
+
+        .ui-btn-up-b .ui-icon-demo-set,
+        .ui-btn-hover-b .ui-icon-demo-set,
+        .ui-btn-down-a .ui-icon-demo-set {
+            background-image: url(wp/images/set.light.png);
+        }
+
+        @media screen and (orientation: portrait) {
+            @-ms-viewport {
+                width: 320px;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            @-ms-viewport {
+                width: 480px;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        // Wait for Cordova to load
+        document.addEventListener("deviceready", onDeviceReady, false);
+        // Cordova is ready
+        function onDeviceReady() {
+            //check if inside ripple wrapper
+            if (!document.getElementById('tinyhippos-injected'))
+                navigator.splashscreen.hide();
+        }
+    </script>
+</head>
+<body>
+    <div data-role="page" id="loginPage" class="type-interior" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false">
+            <h3 id="headerText" lang="TITLEHOME"></h3>
+        </div>
+        <!-- /header -->
+        <div data-role="content" data-theme="a">
+            <div class="content-primary">
+                <div data-role="content">
+                    <div data-role="fieldcontain">
+                        <input name="" id="nameInput" lang="USERNAME" value="" type="text">
+                    </div>
+                    <div data-role="fieldcontain">
+                        <input name="" id="passInput" lang="PASSWORD" value="" type="password">
+                    </div>
+                    <!--<div data-role="filecontain">
+                        <label for="uniSelectList" class="select">Custom select menu</label>
+                        <select name="uniSelectList" id="uniSelectList" data-native-menu="false">
+                             						Generated 
+                        </select>
+                    </div>-->
+                    <div data-role="fieldcontain">
+                        <a data-role="button" id="loginButton">Login </a>
+                        <a data-role="button" id="registerButton" lang="REGISTER"></a>
+                        <label>
+                            <input type="checkbox" id="saveLogin"/><label lang="STAYLOGGEDIN"></label>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!--/content-primary -->
+        </div>
+        <!-- /content -->
+    </div>
+    <!-- /page -->
+    <!-- Directory Page -->
+    <div data-role="page" id="directoryPage" win class="type-interior" data-theme="a" >
+        <div id="header" data-theme="b" data-role="header" data-position="fixed" data-tap-toggle="false">
+            <h2 lang="CHOOSEDIRECTORY" class="context contextMovePickTarget"</h2>
+            <h3 id="headerTextDirectory"></h3> 
+        </div>
+        <div data-role="content" data-theme="a">
+            <div class="content-primary">
+                <div data-role="content">
+                    <ul data-role="listview" id="directoryView">
+                        <!--  Items will be added dynamically -->
+                    </ul>
+                </div>
+            </div>
+            <!--/content-primary -->
+        </div>
+        <!-- /content -->
+        <!-- Navbar with multiple selection options -->
+        <div data-role='app-bar' class="context contextSelectionSingle">
+            <a lang="LOGOUT" id="navbarLogoutButtonSingle" data-icon="logout" data-inline="true" href='#' class="context contextSelectionSingle navbarLogout"></a>
+
+            <a lang="MOVESHORT" id="navbarMoveButtonSingle" href="#" data-icon="move" data-rel="popup" data-inline="true" class="context contextSelectionSingle navbarMove"></a>
+            <a lang="RENAME" id="navbarRenameButtonSingle" href="#" data-icon="rename" data-rel="popup" data-inline="true" class="context contextSelectionSingle navbarRename"></a>
+            <a lang="DELETE" id="navbarDeleteButtonSingle" href="#" data-icon="papierkorb" data-rel="popup" data-inline="true" class="context contextSelectionSingle navbarDelete"></a>
+            <!--<a lang="SHARE" id="navbarShareButtonSingle" href="#" data-icon="share" data-rel="popup" data-inline="true" class="context contextSelectionSingle navbarShare"></a>-->
+
+            <ul>
+                 <li><a lang="CREATEFOLDER" id="navbarFolderButtonSingle" href='#' class="context contextSelectionSingle navbarCreateFolder"></a></li>
+                 <li><a lang="CLEARSELECTION" id="navbarClearSelectionButtonSingle" href='#' class="context contextSelectionSingle navbarClearSelection"></a></li>
+                <li><!--<a id="backButtonSingle" href='#' class="context contextSelectionSingle navbarBack">Back</a>--></li>
+            </ul>
+        </div>
+        
+        <!-- Navbar with multiple selection options -->
+        <div data-role='app-bar' class="context contextSelectionMultiple">
+            <a lang="LOGOUT" id="navbarLogoutButtonMultiple" data-icon="logout" data-inline="true" href='#' class="context contextSelectionMultiple navbarLogout"></a>
+            <a lang="MOVESHORT" id="navbarMoveButtonMultiple" href="#" data-icon="move" data-rel="popup" data-inline="true" class="context contextSelectionMultiple navbarMove"></a>
+            <a lang="DELETE" id="navbarDeleteButtonMultiple" href="#" data-icon="papierkorb" data-rel="popup" data-inline="true" class="context contextSelectionMultiple navbarDelete"></a>
+            <ul>
+                <li><a lang="CREATEFOLDER" id="navbarFolderButtonMultiple" href='#' class="context contextSelectionMultiple navbarCreateFolder"></a></li>
+                <li><a lang="CLEARSELECTION" id="navbarClearSelectionButtonMultiple" href='#' class="context contextSelectionMultiple navbarClearSelection"></a></li>
+                <li><!--<a id="navbarBackButtonMultiple" href='#' class="context contextSelectionSingle navbarBack">Back</a>--></li>
+            </ul>
+        </div>
+
+        <!-- Navbar with normal options -->
+        <div data-role='app-bar' class="context contextSelection">
+            <a lang="LOGOUT" id="navbarLogoutButtonNormal" data-icon="logout" data-inline="true" href='#' class="context contextSelection navbarLogout"></a>
+              <!--<a lang="SETTINGS" id="navbarSettingsButtonNormal" href='#' data-icon="einstellungen" data-rel="popup" data-inline="true" class="context contextSelection navbarSettings"></a>-->
+            <ul>
+                <li><a lang="CREATEFOLDER" id="navbarFolderButtonNormal" href='#' class="context contextSelection navbarCreateFolder"></a></li>
+                <!--<li><a id="navbarBackButtonNormal" href='#' class="context contextSelection navbarBack">Back</a></li>-->
+
+            </ul>
+        </div>
+
+        <!-- Navbar with normal options -->
+        <div data-role='app-bar' class="context contextMovePickTarget">
+            <a lang="OK" id="navbarMoveOkButton" href='#' data-icon="ok" data-rel="popup" data-inline="true" class="context contextMovePickTarget navbarMoveTarget"></a>
+            <a lang="CANCEL" id="navbarMoveCancelButton" href='#' data-icon="abbruch" data-rel="popup" data-inline="true" class="context contextMovePickTarget navbarCancel"></a>
+        </div>
+
+        <div data-role="popup" id="registerPopup">
+            <div data-role="content">
+                To use this app you need an account. It is not possible to register for the service yourself. Please contact tobias.brockmann@uni-muenster.de if you have problems with your login credentials.
+            </div>
+        </div>
+
+        <div data-role="popup" id="renamePopup">
+            <div data-role="header">
+                <h1 lang="CONFIRMRENAME"></h1>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <label lang="RENAMEPOPUP"></label>
+                    <input name="" id="renameTextfield" value="" type="text">
+                </div>
+                <fieldset class="ui-grid-a">
+                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.renameFile()">OK</a>
+                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.resetContext()">Cancel</a>
+                </fieldset>
+            </div>
+        </div>
+        <div data-role="popup" id="deletePopup">
+            <div data-role="header">
+                <h1 lang="CONFIRMDELETETEXTMULTI"></h1>
+            </div>
+            <div data-role="content">            
+                <fieldset class="ui-grid-a">
+                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.deleteFile()">OK</a>
+                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.resetContext()">Cancel</a>
+                </fieldset>
+            </div>
+        </div>
+         <div data-role="popup" id="movePopup">
+            <div data-role="header">
+                <h1 lang="CONFIRMDELETETEXTMULTI"></h1>
+            </div>
+            <div data-role="content">            
+                <fieldset class="ui-grid-a">
+                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.moveElement()">OK</a>
+                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.resetContext()">Cancel</a>
+                </fieldset>
+            </div>
+        </div>
+         <div data-role="popup" id="createFolderPopup">
+            <div data-role="header">
+                <h1 lang="CREATEFOLDER"></h1>
+            </div>
+            <div data-role="content"> 
+                <div data-role="fieldcontain">
+                    <label lang="CREATEFOLDERTEXT"></label>
+                    <input name="" id="createFolderTextfield" value="" type="text">
+                </div>           
+                <fieldset class="ui-grid-a">
+                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.createFolder()">OK</a>
+                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.resetContext()">Cancel</a>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
