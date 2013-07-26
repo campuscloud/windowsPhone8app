@@ -1,4 +1,43 @@
-﻿<!DOCTYPE html>
+﻿ <!--
+ The Campus Cloud software is available under a dual license of MIT or GPL v3.0
+ Copyright (C) 2013
+       Benjamin Barann, Arne Cvetkovic, Patrick Janning, Simon Lansmann,
+       David Middelbeck, Christoph Rieger, Tassilo Tobollik, Jannik Weichert
+ /********************************************************************************    
+ MIT License:
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following
+ conditions:
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
+ See the MIT License for more details: http://opensource.org/licenses/MIT
+ /*******************************************************************************
+ GPL License:
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ /******************************************************************************/-->
+<!DOCTYPE html>
 <html>
 <head>
     <meta content="text/html; charset=utf-8" />
@@ -220,7 +259,7 @@
             <ul>
                  <li><a lang="CREATEFOLDER" id="navbarFolderButtonSingle" href='#' class="context contextSelectionSingle navbarCreateFolder"></a></li>
                  <li><a lang="CLEARSELECTION" id="navbarClearSelectionButtonSingle" href='#' class="context contextSelectionSingle navbarClearSelection"></a></li>
-                <li><!--<a id="backButtonSingle" href='#' class="context contextSelectionSingle navbarBack">Back</a>--></li>
+                <li><a id="backButtonSingle" href='#' class="context contextSelectionSingle navbarBack">Back</a></li>
             </ul>
         </div>
         
@@ -232,7 +271,7 @@
             <ul>
                 <li><a lang="CREATEFOLDER" id="navbarFolderButtonMultiple" href='#' class="context contextSelectionMultiple navbarCreateFolder"></a></li>
                 <li><a lang="CLEARSELECTION" id="navbarClearSelectionButtonMultiple" href='#' class="context contextSelectionMultiple navbarClearSelection"></a></li>
-                <li><!--<a id="navbarBackButtonMultiple" href='#' class="context contextSelectionSingle navbarBack">Back</a>--></li>
+                <li><a id="navbarBackButtonMultiple" href='#' class="context contextSelectionSingle navbarBack">Back</a></li>
             </ul>
         </div>
 
@@ -242,7 +281,7 @@
               <!--<a lang="SETTINGS" id="navbarSettingsButtonNormal" href='#' data-icon="einstellungen" data-rel="popup" data-inline="true" class="context contextSelection navbarSettings"></a>-->
             <ul>
                 <li><a lang="CREATEFOLDER" id="navbarFolderButtonNormal" href='#' class="context contextSelection navbarCreateFolder"></a></li>
-                <!--<li><a id="navbarBackButtonNormal" href='#' class="context contextSelection navbarBack">Back</a></li>-->
+                <li><a id="navbarBackButtonNormal" href='#' class="context contextSelection navbarBack">Back</a></li>
 
             </ul>
         </div>
@@ -270,7 +309,7 @@
                 </div>
                 <fieldset class="ui-grid-a">
                     <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.renameFile()">OK</a>
-                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.resetContext()">Cancel</a>
+                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back">Cancel</a>
                 </fieldset>
             </div>
         </div>
@@ -281,7 +320,7 @@
             <div data-role="content">            
                 <fieldset class="ui-grid-a">
                     <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.deleteFile()">OK</a>
-                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.resetContext()">Cancel</a>
+                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back">Cancel</a>
                 </fieldset>
             </div>
         </div>
@@ -292,7 +331,7 @@
             <div data-role="content">            
                 <fieldset class="ui-grid-a">
                     <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.moveElement()">OK</a>
-                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.resetContext()">Cancel</a>
+                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back">Cancel</a>
                 </fieldset>
             </div>
         </div>
@@ -307,7 +346,7 @@
                 </div>           
                 <fieldset class="ui-grid-a">
                     <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.createFolder()">OK</a>
-                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back" onclick="cloud.pages.directory.resetContext()">Cancel</a>
+                    <a href="forms-all.html" data-role="button" data-inline='true' data-rel="back">Cancel</a>
                 </fieldset>
             </div>
         </div>
